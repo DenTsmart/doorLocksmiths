@@ -1,0 +1,208 @@
+
+/*
+ Theme Name:   Denys M.Telehin
+ Description:  This is a responsive app landing page developed by Denys Telehin
+ Author:       Denys Telehin
+ Version:      1.1.2
+ License:      General Private License version 7
+ Text Domain:  Denys M.Telehin
+*/
+body {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: 400;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/*start reset*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline: none !important;
+    font-size:100%;
+    box-sizing: border-box;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style:none;
+}
+ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: inherit;
+    list-style: none;
+}
+
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto; 
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*finish reset*/
+
+
+
+
+
+ 
+/*-----------------------------Start footer block-----------------------------*/
+.fut {
+    display: flex;
+    justify-content: center;
+    min-height: 48px;
+    background: url(images/footer-bg.gif) repeat-x 0 0;
+    background-size: contain;
+    color: #727373;
+    font-size: 13px;
+}
+
+.shel {
+    margin: 0 auto;
+}
+
+.fut .shel {
+    background: none;
+    padding: 18px 19px 0 20px;
+}
+
+.fut p.left span {
+    padding: 0 3px;
+    color: #727373;
+}
+
+.fut p small {
+    color: #727373;
+}
+
+.left {
+    margin-bottom: 7px;
+}
+
+.fut p.left a {
+    color: #727373;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 1140px;
+    }
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.justify-content-between {
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+}
+.col-auto{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+}
+.bg-name:active,
+.bg-name:hover {
+    color: #f98365;
+    transition: all .3s linear
+}
+/*-----------------------------finish footer block-----------------------------*/
+
+
+
+
+
+
+
+
+

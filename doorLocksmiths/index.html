@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Toronto - Lock Repair, Lock Installation, & Lock Replacement</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*===start btn===*/
+
+body {
+    line-height:1;
+}
+
+#slider-wrap{
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    opacity: 1;
+    right: 17px;
+    margin-top: -113.5px;
+    transform: translate3d(0, 0, 0);
+}
+
+.slider_dot{
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    border-radius: 50%;
+    position: relative;
+    list-style-type: none;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.shift{
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+
+
+}
+.only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+#slider-wrap .slider_dot .shift span{
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background-image: linear-gradient(0deg, #ffffff, #1a1a1a);
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#slider-wrap .slider-nav .slider_dot .shift.activ-point span,
+#slider-wrap .slider-nav .slider_dot:hover .shift.activ-point span
+{
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+}
+#slider-wrap .slider-nav .slider_dot .shift span:hover {
+  width: 9px;
+  height: 9px;
+  margin: -4px;
+  background-image: linear-gradient(0deg, #ff8a00, #e52e71);
+  box-shadow: 0 0 14px 6px rgb(0 0 0 / 15%);
+  /*display: none;*/
+}
+
+ .activ-point{
+    border-bottom: 1px solid;
+}
+ .activ-point:hover::after {
+    display: none;
+}
+
+/*finish btn*/
+
+/*start top_head*/
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    padding-left: 30px;
+    z-index: 9;
+}
+.navigate {
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+}
+@media (max-width: 971px) {
+    .navigate {
+        display: none;
+    }
+}
+
+.navigate li {
+    margin-right: 12px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+@media screen and (max-width: 1255px){
+    .navigate li {
+    font-size: 15px;
+}
+}
+@media screen and (max-width: 1098px){
+    .navigate li {
+    font-size: 13px;
+}
+}
+
+.active_scroll {
+    transition: .5s;
+    padding: 4px 0px 4px 0px !important;
+    background-color: #4c9ada5c !important;
+    backdrop-filter: blur(5px);
+}
+
+@media (max-width: 829px) {
+    .header {
+        height: 60px;
+    }
+}
+.list-contact {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+}
+
+.item_contact {
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 815px) {
+    .data_contact{
+      font-size: 1rem;
+  }
+}
+@media screen and (max-width: 588px) {
+    .data_contact{
+      font-size: .9rem;
+  }
+  .list-contact {
+    margin-left: 22px;
+}
+.item_contact {
+    margin: 0 10px;
+}
+}
+.slide_1 {
+    height: 100vh;
+    background-image: url(images/locked.jpg);
+    background-size: cover;
+    background-position: center 100%;
+    background-repeat: no-repeat;
+}
+
+.through {
+    text-decoration: line-through;
+}
+
+.head {
+    text-align: center;
+}
+
+.item_chenge {
+    border: 11px solid #26df0e;
+    display: block;
+    border-radius: 10%;
+    height: 70vh;
+}
+.banerWrap{
+   display: flex;
+   position: relative;
+    top: 11rem;  
+}
+@media screen and (max-width: 530px) {
+    .banerWrap{
+       top: 5rem;
+    }
+}
+.baner{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 950px) {
+    .baner{
+       top: 5rem;
+    }
+}
+.titleBan{
+   font-size: 6vh;
+   display: flex;
+   justify-content: start;
+   color: #000000;
+   line-height: 13vh;
+   margin-left: 7vh;
+}
+.banerSign{
+    font-size: 2.7vh;
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    color: #000000;
+    line-height: 13vh;
+     margin-left: 7vh;
+}
+@media screen and (max-width: 712px) {
+    .banerSign{
+       display: none;
+    }
+}
+@media (max-width: 645px) {
+    .baner {
+        top: 7rem;
+    }
+    .titleBan {
+        font-size: 4vh;
+    }
+}
+@media (max-width: 445px) {
+    .titleBan {
+        font-size: 3vh;
+    }
+}
+.loGo{
+    width: 29vw;
+    margin-left: 20px;
+    background-image: url(images/logoNDK.png);
+    background-size: cover;
+    background-position: center 100%;
+    background-repeat: no-repeat; 
+}
+@media screen and (max-width: 1538px) {
+    .loGo{
+        width: 31vw;
+    }
+}
+@media screen and (max-width: 1403px) {
+    .loGo{
+      width: 34vw;
+    }
+}
+@media screen and (max-width: 1277px) {
+    .loGo{
+     width: 35vw;
+    }
+}
+@media screen and (max-width: 1248px) {
+    .loGo{
+      display: none;
+    }
+}
+
+.title_content {
+    height: 20px !important;
+    transition: .7s;
+    color: #e4e4e4 !important;
+}
+
+
+/*finish top_head*/
+
+/*Start burger_button*/
+
+.menu-item {
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    transition: all .3s linear;
+}
+.menu-item:hover {
+    color: #ffffff;
+}
+.menu-item::after {
+    display: block;
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    opacity: 0;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    z-index: 2;
+    transition: all .3s linear;
+}
+.menu-item:hover::after {
+    opacity: 1;
+    bottom: -6px;
+}
+
+.data_phone, .data_email {
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 1614px) {
+    .data_email {
+    display: none;
+    }
+}
+
+@media (max-width: 422px) {
+    .data_contact {
+        display: none;
+    }
+}
+@media screen and (max-width: 971px) {
+    .data_phone{
+      font-size: 1rem;
+  }
+}
+.gold {
+    height: 100%;
+    width: 100%;
+}
+
+.menu_icon {
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    width: 30px;
+    left: 14px;
+    z-index: 19;
+}
+
+@media (max-width: 971px) {
+    .menu_icon {
+        display: block;
+    }
+}
+
+.menu_icon_line {
+    position: relative;
+    width: 30px;
+    height:3px;
+    background-color: #000;
+}
+
+.menu_icon_line::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+}
+
+.menu_icon_line::after {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+}
+
+.menu_icon.menu_icon_active .menu_icon_line {
+    background-color: transparent;
+}
+
+.menu_icon.menu_icon_active .menu_icon_line::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.menu_icon.menu_icon_active .menu_icon_line::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+
+}
+.mobile-nav {
+    display: block;
+    position: absolute;
+    left: -311px;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 311px;
+    background-color: #4c9ada5c !important;
+    backdrop-filter: blur(25px);
+    z-index: 9;
+    padding-bottom: 40px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 3em;
+    transition: transform 0.3s ease-in;
+}
+
+.mobile-nav-sctiv {
+    transform: translateX(100%);
+}
+
+.mobile-nav #logo1 {
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    display: block;
+    width: 100%;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+#logo1 a{
+    color:#000000;
+}
+
+.mobile-nav #color-menu ul li {
+    margin: 0 0 10px 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mobile-nav .color-footer {
+    margin: 30px 0 0 0;
+    font-size: 13px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+}
+
+#color-menu {
+    margin-bottom: 271px;
+    text-align: center;
+    color: #444;
+}
+#color-menu ul li a {
+    color: #000000;
+}
+/*finish burger_button*/
+
+
+/* Start block houseLockout */
+
+.houseLockout {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url(images/home.png);
+    background-size: cover;
+    background-position: center 100%;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width: 456px) {
+    .houseLockout {
+       height: 120vh;
+    } 
+}
+@media only screen and (max-width: 439px) {
+    .houseLockout {
+       padding: 1em .9em;
+    } 
+}
+.bgShadow{
+    background-color: #0f0f0f69;
+    position: relative;
+    width: 100%;
+    padding: 4em 1.5rem;
+}
+@media only screen and (max-width: 439px) {
+    .bgShadow {
+      padding: 2em 1rem; 
+    } 
+}
+@media only screen and (max-width: 362px) {
+    .bgShadow {
+      padding: 1em .6rem; 
+    } 
+}
+.section_inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.title_slogan {
+    font-size: 3vw;
+    position: absolute;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: #ffffffad;
+    z-index: 9;
+}
+@media only screen and (max-width: 611px) {
+    .title_slogan {
+       font-size: 3.9vw;
+       margin-bottom: .3em; 
+    } 
+}
+@media only screen and (max-width: 439px) {
+    .title_slogan {
+       font-size: 1em;
+       margin-bottom: 20px;
+    } 
+}
+.inner-text_1 {
+    z-index: 9;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 36px;
+    font-size: 2vw;
+    color: #ffffffd1;
+    margin: 6em 0;
+}
+@media only screen and (max-width: 1013px) {
+    .inner-text_1 {
+        font-size: 1.9vw;
+        margin: 5em 0;
+    }
+}
+@media only screen and (max-width: 697px) {
+    .inner-text_1 {
+       font-size: 2.2vw; 
+    } 
+}
+@media only screen and (max-width: 611px) {
+    .inner-text_1 {
+       font-size: 2.7vw;
+       margin: 2em 0; 
+    } 
+}
+@media only screen and (max-width: 611px) {
+    .inner-text_1 {
+       font-size: 3.1vw; 
+    } 
+}
+@media only screen and (max-width: 455px) {
+    .inner-text_1 {
+       font-size: 4.4vw; 
+    } 
+}
+@media only screen and (max-width: 439px) {
+    .inner-text_1 {
+       margin: 5em 0; 
+    } 
+}
+.shadow {
+    position: absolute;
+    color: #ffc25c1f;
+    font-size: clamp(3rem, 7.5vw, 8rem);
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    right: -706px;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.shadow_point {
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    width: 210px;
+    height: 210px;
+    color: #ffffff7d;
+    position: absolute;
+    text-align: center;
+    top: 710px;
+    right: 40px;
+    background-image: linear-gradient(0deg, #ff8a0078, #e52e7163);
+    border-radius: 50%;
+    z-index: 1;
+    white-space: nowrap;
+    line-height: 200px;
+    letter-spacing: 1px;
+}
+
+/* finish block houseLockout */
+
+/*Start block carLockout*/
+
+.slide_3 {
+    height: 100vh;
+    background-image: url(images/power.jpg);
+    background-size: cover;
+    background-position: center 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: block;
+    position: relative;
+    background-attachment: fixed;
+    padding-top: 35vh;
+}
+@media only screen and (max-width: 967px) {
+    .slide_3 {
+       padding-top: 20vh; 
+    } 
+}
+@media only screen and (max-width: 855px) {
+    .slide_3 {
+        height: 110vh;
+       padding-top: 10vh; 
+    } 
+}
+@media only screen and (max-width: 855px) {
+    .slide_3 {
+        height: 125vh;
+    } 
+}
+
+@media only screen and (max-width: 594px) {
+  .slide_3 {
+        height: 100vh;
+    }
+}
+@media only screen and (max-width: 594px) {
+  .slide_3 {
+        height: 100vh;
+    }
+}
+@media only screen and (max-width: 475px) {
+    .slide_3 {
+        height: 110vh;
+       padding-top: 5vh; 
+    } 
+}
+@media only screen and (max-width: 399px) {
+    .slide_3 {
+        height: 120vh;
+    } 
+}
+@media only screen and (max-width: 368px) {
+    .slide_3 {
+        height: 129vh;
+    } 
+}
+@media only screen and (max-width: 337px) {
+    .slide_3 {
+        height: 149vh;
+    } 
+}
+
+.top{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1229px) {
+    .top {
+        top: 19rem;
+    }
+}
+@media (max-width: 923px) {
+    .top {
+            top: 14rem;
+        }
+}
+@media (max-width: 704px) {
+    .top {
+        top: 10rem;
+    }
+}
+@media (max-width: 554px) {
+    .top {
+        top: 5rem;
+    }
+}
+@media (max-width: 522px) {
+    .top {
+        top: 3rem;
+    }
+}
+@media (max-width: 390px) {
+    .top {
+        top: 2rem;
+    }
+}
+.mainLine{
+    display: flex;
+    justify-content: center;
+}
+.hero-line{
+    width: 85vw;
+    height: 1px;
+    background: hsl(0, 0%, 0%);
+    margin-bottom: 1rem;
+}
+@media (max-width: 366px) {
+    .hero-line {
+       display: none;
+    }
+}
+.mainText{
+    display: flex;
+    justify-content: center; 
+}
+.wraptext{
+    display: flex;
+   width: 85vw; 
+}
+@media only screen and (max-width: 855px) {
+   .wraptext {
+    flex-direction: column;
+    align-items: center;
+  } 
+}
+
+
+.title{
+   width: 40vw;
+   margin-right: 20px;
+}
+@media only screen and (max-width: 855px) {
+   .title{
+     margin-right: 0px;
+     margin-bottom: 30px;
+}
+}
+@media only screen and (max-width: 594px) {
+   .title{
+    width: 70vw;
+ }
+}
+.subtitle{
+    color: #000000;
+   font-size: 1em;
+   width: 45vw;
+}
+@media only screen and (max-width: 594px) {
+  .subtitle {
+    width: 70vw;
+  }
+}
+.nowrap{
+    color: #000000;
+    font-size: 2em;
+}
+
+@media (max-width: 998px) {
+    .nowrap {
+        font-size: 2em;
+    }
+}
+@media (max-width: 704px) {
+    .nowrap {
+        font-size: 1.5em;
+    }
+}
+
+/*finish block carLockout*/
+
+/*==============Start block safeLockout==================*/
+
+.slide_4 {
+    height: 100vh;
+    padding: 50px;
+}
+@media screen and (max-width: 971px) {
+  .slide_4 {
+   height: 140vh;
+  }
+}
+@media screen and (max-width: 773px) {
+  .slide_4 {
+   height: 160vh;
+  }
+}
+@media screen and (max-width: 409px) {
+  .slide_4 {
+   height: 211vh;
+  }
+}
+#landscape {
+  margin-bottom: 50px;
+}
+.sign_design {
+  color: #000000;
+  font-size: 3vw;
+  margin: 15px 0 30px 0;
+  text-align: center;
+}
+@media screen and (max-width: 726px) {
+  .sign_design {
+   font-size: 6vw;
+  }
+}
+.sing_styling {
+  color: #5C5C5C;
+  font-size: 2vw;
+  margin: 15px 15px 30px 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1091px) {
+  .sing_styling {
+   margin: 15px 15px 6px 15px;
+  }
+}
+@media screen and (max-width: 726px) {
+  .sing_styling {
+   font-size: 4vw;
+  }
+}
+.landscape-baner {
+  position: absolute;
+  left: 77px;
+  background-image: url(images/safe.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 583px;
+  border-radius: 3%;
+  z-index: 1;
+}
+
+.landscape_signature {
+  position: relative;
+  left: 698px;
+  top: 42px;
+  width: 56vw;
+  border: 11px solid #434141;
+  padding: 20px 20px 20px 165px;
+}
+
+.sentence {
+  color: #5C5C5C;
+  font-size: 1em;
+  list-style: disc;
+}
+
+.sentence li {
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 1739px) {
+  .landscape_signature {
+    left: 590px;
+  }
+}
+
+@media screen and (max-width: 1583px) {
+  .landscape_signature {
+    left: 568px;
+  }
+
+  .landscape-baner {
+    left: 82px;
+  }
+}
+@media screen and (max-width: 1507px) {
+  .landscape_signature {
+    left: 533px;
+  }
+}
+@media screen and (max-width: 1416px) {
+  .landscape_signature {
+    left: 489px;
+  }
+}
+@media screen and (max-width: 1329px) {
+  .landscape_signature {
+    left: 478px;
+    top: 48px;
+    padding: 40px 40px 40px 130px;
+  }
+}
+@media screen and (max-width: 1255px) {
+  .landscape_signature {
+    left: 443px;
+    top: 48px;
+    padding: 20px 20px 20px 93px;
+  }
+    .landscape-baner {
+      left: 46px;
+    }
+}
+
+@media screen and (max-width: 1142px) {
+  .landscape_signature {
+    left: 368px;
+    top: 35px;
+    padding: 40px 40px 40px 113px;
+    
+  }
+@media screen and (max-width: 1100px) {
+  .landscape_signature{
+  padding: 15px 15px 15px 102px;
+  }
+}
+  .landscape-baner {
+    left: 46px;
+    height: 352px;
+  }
+}
+@media screen and (max-width: 1028px) {
+  .landscape_signature {
+    left: 335px;
+    top: 23px;
+    padding: 40px 40px 40px 95px;
+  }
+}
+
+@media screen and (max-width: 957px) {
+  .landscape_signature {
+    left: 292px;
+    top: 42px;
+    padding: 40px 40px 40px 109px;
+  }
+}
+@media screen and (max-width: 839px) {
+  .landscape_signature {
+    left: 255px;
+    top: 65px;
+    padding: 40px 40px 40px 91px;
+  }
+
+  .landscape-baner {
+    left: 35px;
+  }
+}
+@media screen and (max-width: 766px) {
+  .landscape_signature {
+    left: 10px;
+    top: 306px;
+    width: 75vw;
+    padding: 46px 40px 5px 33px;
+  }
+  .sentence {
+    font-size: 4vw;
+  }
+
+  .wrap_landscape {
+    margin-bottom: 264px;
+  }
+}
+@media screen and (max-width: 407px) {
+  .landscape_signature {
+    left: -12px;
+    top: 303px;
+    padding: 59px 24px 4px 31px;
+  }
+.sing_styling {
+  font-size: 5vw;
+}
+.sign_design {
+  font-size: 9vw;
+}
+  .landscape-baner {
+    left: 23px;
+  }
+
+  .sentence {
+    font-size: 6vw;
+  }
+
+  .wrap_landscape {
+    margin-bottom: 311px;
+  }
+}
+@media (min-width: 1200px){
+.col-lg-5, .col-md-4, .col-sm-5, .col-xs-10{
+    float: left;
+}
+}
+.col-xs-10 {
+    width: 83.33333333%;
+}
+@media (min-width: 768px){
+.col-sm-5 {
+    width: 41.66666667%;
+}
+}
+@media (min-width: 992px){
+.col-md-4 {
+    width: 40.33333333%;
+}
+}
+@media (min-width: 1200px){
+.col-lg-5 {
+    width: 41.66666667%;
+}
+}
+
+
+
+
+
+/*==========finish block safeLockout======================*/
+
+/*---------------------------- Start block mailboxLockout --------------------------------*/
+
+.slide_5 {
+    height: 100vh;
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(images/mailphoto.jpg);
+    background-position: center center;
+    background-size: cover;
+    
+}
+.wrapBlock {
+    height: 100%;
+    width: var(--grid-width, 100%);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex
+}
+
+.itemLeft {
+    height: auto;
+    width: 50%;
+    padding: 5vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(20%);
+    opacity: 0;
+    transition: all ease 1s;
+    background: #0574e45a;
+    backdrop-filter: blur(5px);
+}
+
+.rightItem {
+    width: 50%;
+    height: auto
+}
+
+.imgItem {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.activeTrans {
+    transform: translateY(0%);
+    opacity: 1;
+    transition-delay: .8s
+}
+
+.titlEservice {
+    color: #000000;
+    font-size: 1.5rem
+}
+
+.mainTitle {
+    font-size: 3rem;
+    margin: 20px;
+    color: #000000;
+    text-align: center
+}
+
+.subTitlo {
+    font-weight: 900
+}
+
+.synopsisMail {
+    color: #000000;
+    font-size: 1.5rem
+}
+.button {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 15px;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2c2d2e;
+    background-color: #fff;
+    border-color: #fff;
+    margin-top: 57px;
+}
+
+@media screen and (max-width: 1202px) {
+    .wrapBlock {
+        flex-direction: column;
+    }
+
+    .rightItem {
+        width: 100%;
+        min-height: 50vh;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .transmission {
+        height: 121vh;
+    }
+
+}
+@media screen and (max-width: 1198px) {
+  .itemLeft {
+    padding: 0;
+    width: 100%;
+    min-height: auto;
+  }
+  .mainTitle {
+    font-size: 2rem;
+    margin: 10px;
+  }
+  .button {
+    margin-top: 57px;
+    margin-bottom: 27px;
+  }
+.synopsisMail {
+    padding: 22px;
+  }
+}
+@media screen and (max-width: 404px) {
+    .synopsisMail {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 404px) {
+    .button {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (min-width: 986px){
+  .button {
+    margin-top: 12px;
+    margin-bottom: 89px;
+  }
+}
+@media screen and (max-width: 971px){
+  .slide_5 {
+    height: 120vh;
+  }
+  .synopsisMail {
+    padding: 42px;
+  }
+  .mainTitle {
+    font-size: 3rem;
+    margin: 30px;
+  }
+  .button {
+    margin-top: 12px;
+    margin-bottom: 89px;
+  }
+}
+@media screen and (max-width: 588px){
+  .slide_5 {
+    height: 130vh;
+  }
+}
+@media screen and (max-width: 493px){
+  .slide_5 {
+    height: 140vh;
+  }
+  .button {
+    margin-top: 37px;
+    margin-bottom: 89px;
+  }
+}
+@media screen and (max-width: 411px){
+  .slide_5 {
+    height: 144vh;
+  }
+}
+@media screen and (max-width: 327px){
+  .slide_5 {
+    height: 152vh;
+  }
+  .mainTitle {
+    font-size: 2rem;
+}
+.button {
+    margin-bottom: 131px;
+  }
+}
+/*========== finish block mailboxLockout ======================*/
+
+/*----------------------------Start block commercialLockout --------------------------------*/
+
+.slide_6 {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   padding: 5px 60px;
+   background-color: #fff;
+   z-index: 0;
+}
+
+.galleryTrigger{
+    background-image: url(images/comercial.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 785px;
+}
+.itemFocus{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 1.6s;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #1e2c354d;
+  border: 1px solid #7dacc900;
+}
+
+.trigger{
+  color: rgb(116, 116, 116);
+  text-align: center;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all ease 1.3s;
+  background: #f79b1ab0;
+  backdrop-filter: blur(1.5px);
+  border: 2px solid #ffaf009e;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+.trigger.in-viewport{
+  color: #080808;
+  text-align: center;
+  transform: translateY(0px);
+  opacity: 1;
+  transition: .7s;
+}
+.trigger h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+.trigger p{
+   font-size: 26px;
+   margin-bottom: 20px; 
+}
+@media only screen and (max-width: 638px) {
+  .trigger {
+      background: none;
+      border: 0px;
+  }  
+}
+@media only screen and (max-width: 576px) {
+  .trigger {
+      height: 395px;
+  }  
+}
+@media only screen and (max-width: 425px) {
+  .trigger {
+      height: 360px;
+  }  
+}
+@media only screen and (max-width: 398px) {
+  .trigger {
+      height: 340px;
+  }  
+}
+@media only screen and (max-width: 351px) {
+  .trigger {
+      height: 266px;
+  }  
+}
+@media only screen and (max-width: 322px) {
+  .trigger {
+      height: 220px;
+  }  
+}
+@media only screen and (max-width: 633px) {
+  .slide_6 {
+    padding: 5px 3px; 
+  }  
+}
+
+/*Start btn-up*/
+
+.btn-up {
+      position: fixed;
+      background-image: linear-gradient(0deg, #ffffff, #1a1a1a);
+      left: 20px;
+      bottom: 30px;
+      border-radius: 25px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.15s ease-in-out, transform 0.3s ease-in-out;
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      opacity: 1;
+      transform: translateY(0);
+
+    }
+
+    .btn-up_hide {
+      display: none;
+    }
+
+    .btn-up_hiding {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+
+    .btn-up-icon {
+      width: 40px;
+      height: 40px;
+      fill: currentcolor;
+      border-radius: 25px;
+      background-image: url("images/btnTop.png");
+      background-position: center center;
+      background-size: cover;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .btn-up:hover {
+        background-color: #ef6c00;
+      }
+    }
+
+/*finish btn-up*/
+
+/*============================finish block commercialLockout ================================*/
+
+    </style>
+</head>
+<body>
+<div class="page-wrap">
+
+    <!--Start Main Navigation-->
+    <div id="mobile-nav1" class="mobile-nav">
+        <h1 id="logo1"><a href="#">Lockout Services</a></h1>
+        <div id="color-menu" role="navigation">
+            <ul>
+                <li>
+                    <a href="#my-foto" class="menu-item shift activ-point">HOME</a>
+                </li>
+                <li>
+                    <a class="menu-item shift" href="#houseLockout">house lockout</a>
+                </li>
+                <li>
+                    <a class="menu-item shift" href="#carLockout">car lockout</a>
+                </li>
+                <li>
+                    <a class="menu-item shift" href="#safeLockout">safe lockout</a>
+                </li>
+                <li>
+                    <a class="menu-item shift" href="#mailboxLockout">mailbox lockout</a>
+                </li>
+                <li>
+                    <a class="menu-item shift" href="#commercialLockout">commercial lockout</a>
+                </li>
+                <li>
+                    <a href="#" title="call me">+1 (872) 305 8409</a>
+                </li>
+            </ul>
+        </div>
+        <div class="color-footer">
+            <p>
+                <small> Copyright &copy; All rights reserved 2023 </small>
+            </p>
+        </div>
+    </div>
+
+    <section id="my-foto" class="slide_1 black">
+        <div class="gold">
+        <div class="header">
+                <div id="menu-togle" class="menu_icon">
+                    <div class="menu_icon_line"></div>
+                </div>
+            <ul class="navigate">
+                <li>
+                    <a class="menu-item shift activ-point" data-section="my-foto" href="#my-foto">HOME</a>
+                </li>
+                <li>
+                    <a class="menu-item shift" data-section="houseLockout" href="#houseLockout">house lockout</a>
+                </li>
+                <li>
+                    <a class="menu-item shift" data-section="carLockout" href="#carLockout">car lockout</a>
+                </li>
+                <li>
+                    <a class="menu-item shift" data-section="safeLockout" href="#safeLockout">safe lockout</a>
+                </li>
+                <li>
+                    <a class="menu-item shift" data-section="mailboxLockout" href="#mailboxLockout">mailbox lockout</a>
+                </li>
+                <li>
+                    <a class="menu-item shift" data-section="commercialLockout" href="#commercialLockout">commercial lockout</a>
+                </li>
+            </ul>
+            <div class="contact">
+                <ul class="list-contact">
+                    <li class="item_contact">
+                        <span class="data_phone">+1 (872) 305 8409</span>
+                    </li>
+                    <li  class="item_contact">
+                        <span class="data_email">Ndkcontracting22@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+       <div class="banerWrap">
+            <div class="baner">
+                <h1 class="titleBan">Locksmith in Toronto, Ontario <br> We serve both commercial and  <br> residential clients.</h1>
+                <p class="banerSign">Hassle-Free | Mobile Locksmith | Car Locksmith | Fair Pricing</p>
+            </div>
+            <div class="loGo"></div>
+        </div>
+        </div>
+    </section>
+
+    <section id="houseLockout" class="slide_2 houseLockout">
+        <div class="bgShadow">
+            <div class="section_inner">
+                <h1 class="title_slogan">Residential Locksmith Service</h1>
+                <p class="inner-text_1">
+                    Houses, condos, apartments and other private dwellings in North York need professional locksmith services from time to
+                    time and when they do North York Locksmith is ready to exceed their expectations. Our trained experts know how to
+                    provide residential locksmith service quickly and efficiently and provide these super services and more. Residential
+                    locks require subtlety yet strength so that the locks and the safety measures are not detectable yet also provide you
+                    with the industrial grade safety that you require in order to protect your possessions.
+                    
+                    At North York Locksmith we instill confidence in our customers that we will always be there when they need us.
+                </p>
+            </div>
+            <h2 class="shadow trans" data-speed="-1">we are the best</h2>
+            <span class="shadow_point trans_vert" data-speed="-1">give us a call</span>
+        </div>
+    </section>
+
+    <section id="carLockout" class="slide_3">
+        
+        <div class="top">
+            <div class="mainLine">
+                <div class="hero-line"></div>
+            </div>
+            <div class="mainText">
+                <div class="wraptext">
+                <h1 class="title">
+                    <p class="nowrap">
+                        Car Locksmith
+                    </p>
+                </h1>
+                <h2 class="subtitle">
+                    The situation of leaving car keys inside the car, losing them somewhere else, and getting locked in the car is surely
+                    very awkward but you don't need to get worried at all. Ndkcontracting is here in the Toronto and to get you out of
+                    this frustrating situation. It can happen to anyone and as we deal in car locksmith at Ndkcontracting, we meet all
+                    these problems in our day to day routine across Toronto. When you get lockout the car, you may not have any solution
+                    except just calling Ndkcontracting, we are always here for your convenience and solutions to your entire Car Locked
+                    Problems. With Ndkcontracting, you would be served in the best way regarding solutions to your car locksmith needs.
+                </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="safeLockout" class="slide_4">
+        <div id="landscape">
+            <h2 class="sign_design">Trusted and Reliable Safe Opening Locksmith in Toronto</h2>
+        
+            <p class="sing_styling">
+                Struggling with a safe or vault door that won't open?
+            </p>
+            <div class="wrap_landscape">
+    
+                <div class="landscape-baner col-xs-10 col-sm-5 col-md-4 col-lg-5"></div>
+
+                <div class="landscape_signature">
+                    <ul class="sentence">
+                        <li>
+                            We provide unprecedented and efficient safe opening services;
+                        </li>
+                        <li>
+                            We specialize in various aspects of secure locksmithing, including combination changes, lock key replacements,
+                            electronic access control systems and more;
+                        </li>
+                        <li>
+                            We offer our customers excellent service;
+                        </li>
+                        <li>
+                            We are quite knowledgeable about all types of safes;
+                        </li>
+                        <li>
+                            We can open almost any type of lock on the market;
+                        </li>
+                        
+                    </ul>
+                </div>
+        
+            </div>
+        
+        </div>
+    </section>
+
+    <section id="mailboxLockout" class="slide_5">
+        <div class="wrapBlock">
+        
+            <div class="itemLeft in-veiwe">
+                <h2 class="mainTitle">Lockout<br>
+                    <span class="subTitlo">MAILBOX</span>
+                </h2>
+                <p class="synopsisMail">
+                    Whatever the circumstances are,lost keys, a damaged lock, keys that are in the wrong hands, the desire for improved security, We can resolve any problem with a mailbox lock.
+                </p>
+                <a class="button" href="#">Read More</a>
+            </div>
+        
+            <div class="rightItem imgItem" style="background-image: url(images/blacks.webp)"></div>
+        
+        </div>
+    </section>
+
+    <section id="commercialLockout" class="slide_6">
+        
+        
+            <div class="galleryTrigger">
+        
+                <div class="itemFocus">
+                    <div class="trigger" title="contact us" aria-label="Contact us">
+                        <h2>COMMERCIAL LOCKOUT</h2>
+                        <p>
+                            We are licensed commercial locksmiths arrive quickly and
+                             work efficiently to get you back in business quickly.
+                        </p>
+                    </div>
+                </div>
+        
+            </div>
+       
+    </section>
+
+    <!-- Start footer block -->
+    <footer class="fut">
+        <div class="container fat">
+            <div class="row justify-content-between shel">
+                <p class="col-auto left">
+                    <a href="#" target="_blank"
+                        title="Follow me on Facebook">Facebook</a>
+                    <span>|</span>
+                    <a href="#" target="_blank"
+                        title="Follow me on Facebook">Instagram</a>
+                    <span>|</span>
+                    <a href="#" target="_blank"
+                        title="Follow me on Facebook">LinkedIn</a>
+                    <span>|</span>
+                    <a href="#" target="_blank"
+                        title="Follow me on Facebook">Youtube</a>
+                    <span>|</span>
+                    <a href="#" target="_blank"
+                        title="Follow me on Facebook">Pinterest</a>
+                </p>
+                <p class="col-auto">
+                    <small> <a href="https://www.facebook.com/denys.telehin" target="_blank" style="color: #727373; text-decoration: none;" class="bg-name" title="Follow me on Facebook">Developed
+                        by Denys Telehin</a> &copy; All rights reserved 2023 </small>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- finish footer block -->
+
+</div>
+
+
+<div id="slider-wrap">
+
+    <ul class="slider-nav">
+
+        <li class="slider_dot">
+            <a class="shift activ-point" data-section="my-foto" href="#my-foto">
+                <span class="only">Section</span>
+                <span></span>
+            </a>
+        </li>
+
+        <li class="slider_dot">
+            <a class="shift" data-section="houseLockout" href="#houseLockout">
+                <span class="only">Section</span>
+                <span></span>
+            </a>
+        </li>
+
+        <li class="slider_dot">
+            <a class="shift" data-section="carLockout" href="#carLockout">
+                <span class="only">Section</span>
+                <span></span>
+            </a>
+        </li>
+
+        <li class="slider_dot">
+            <a class="shift" data-section="safeLockout" href="#safeLockout">
+                <span class="only">Section</span>
+                <span></span>
+            </a>
+        </li>
+
+        <li class="slider_dot">
+            <a class="shift" data-section="mailboxLockout" href="#mailboxLockout">
+                <span class="only">Section</span>
+                <span></span>
+            </a>
+        </li>
+
+        <li class="slider_dot">
+            <a class="shift" data-section="commercialLockout" href="#commercialLockout">
+                <span class="only">Section</span>
+                <span></span>
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="btn-up btn-up_hide">
+    <div class="btn-up-icon" role="img" aria-label="Прокрутить страницу к началу"></div>
+</div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
